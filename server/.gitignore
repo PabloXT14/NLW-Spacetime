@@ -1,3 +1,9 @@
 node_modules
 # Keep environment variables out of version control
 .env
+
+# Upload Images and Vídeos
+uploads/*.jpg
+uploads/*.png
+uploads/*.mp4
+uploads/*.avi
