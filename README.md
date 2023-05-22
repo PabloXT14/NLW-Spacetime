@@ -66,18 +66,44 @@ Você pode visualizar o layout do projeto através [desse link](https://www.figm
 
 ### Mobile
 
+<h4>Splash</h4>
 <p align="center">
-  <h4 align="center">Splash</h4>
-  <img alt="Layout Mobile Demonstration 1" title="#Mobile" src=".github/demos/mobile-demonstration-01.png" style="display: block; margin: auto;">
+	<img
+		src=".github/demos/mobile-demonstration-01.png"
+		alt="Layout Mobile Demonstration 1" 
+		title="Layout Mobile Demonstration 1"
+		height="500px"
+	/>
+</p>
 
-  <h4 align="center">Home (Pre Login)</h4>
-  <img alt="Layout Mobile Demonstration 2" title="#Mobile" src=".github/demos/mobile-demonstration-02.png" style="display: block; margin: auto;">
+<h4>Home (Pre Login)</h4>
+<p align="center">
+	<img
+		src=".github/demos/mobile-demonstration-02.png"
+		alt="Layout Mobile Demonstration 2" 
+		title="Layout Mobile Demonstration 2"
+		height="500px"
+	/>
+</p>
 
-  <h4 align="center">Memories</h4>
-  <img alt="Layout Mobile Demonstration 3" title="#Mobile" src=".github/demos/mobile-demonstration-03.png" style="display: block; margin: auto;">
+<h4>Memories</h4>
+<p align="center">
+	<img
+		src=".github/demos/mobile-demonstration-03.png"
+		alt="Layout Mobile Demonstration 3" 
+		title="Layout Mobile Demonstration 3"
+		height="500px"
+	/>
+</p>
 
-  <h4 align="center">Create</h4>
-  <img alt="Layout Mobile Demonstration 4" title="#Mobile" src=".github/demos/mobile-demonstration-04.png" style="display: block; margin: auto;">
+<h4>Create</h4>
+<p align="center">
+	<img
+		src=".github/demos/mobile-demonstration-04.png"
+		alt="Layout Mobile Demonstration 4" 
+		title="Layout Mobile Demonstration 4"
+		height="500px"
+	/>
 </p>
 
 ---
