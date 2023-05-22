@@ -1,7 +1,7 @@
 import { FastifyInstance } from 'fastify'
 import { randomUUID } from 'node:crypto'
 import { extname, resolve } from 'node:path'
-import { createWriteStream } from 'node:fs'
+import { createWriteStream, unlinkSync } from 'node:fs'
 import { pipeline } from 'node:stream'
 import { promisify } from 'node:util'
 
@@ -16,7 +16,7 @@ export async function UploadRoutes(app: FastifyInstance) {
     })
 
     if (!upload) {
-      return reply.status(400).send({ error: 'Error uploading file' })
+      return reply.status(400).send({ error: 'File not found' })
     }
 
     const mimeTypeRegex = /^(image|video)\/[a-zA-Z]+/
@@ -36,6 +36,11 @@ export async function UploadRoutes(app: FastifyInstance) {
     )
 
     await pump(upload.file, writeStream)
+
+    if (upload?.file.truncated) {
+      unlinkSync(resolve(__dirname, '../../uploads', fileName))
+      reply.status(400).send({ error: 'File too large' })
+    }
 
     const fullUrl = request.protocol.concat('://').concat(request.hostname)
     const fileUrl = new URL(`/uploads/${fileName}`, fullUrl).toString()
